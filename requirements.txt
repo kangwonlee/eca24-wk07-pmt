@@ -1,6 +1,2 @@
-matplotlib
-numpy
-pandas
 pytest
 pytest-xdist
-scipy
