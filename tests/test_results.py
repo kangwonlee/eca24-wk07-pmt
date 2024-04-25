@@ -96,7 +96,12 @@ def random_pmf_txt(random_pmf:PMF) -> str:
 
 
 # Typical Test Cases
-def test_wk08_single_outcome(random_pmf:PMF, random_bounds:Tuple[float, float], random_pmf_txt:str):
+def test_wk08_handles_single_outcome(random_pmf:PMF, random_bounds:Tuple[float, float], random_pmf_txt:str):
+    '''
+    Tests if the probability calculated for a single outcome
+    lies within the valid range of 0 to 1.
+    '''
+
     lower, upper = random_bounds
     if lower > upper:  # Ensure lower bound is not greater than upper bound
         lower, upper = upper, lower
@@ -104,14 +109,22 @@ def test_wk08_single_outcome(random_pmf:PMF, random_bounds:Tuple[float, float], 
     assert 0 <= result <= 1, f"{random_pmf_txt}\nresult = {result:f}" # Probability should be within the valid range
 
 
-def test_wk08_full_range(random_pmf:PMF, random_pmf_txt:str):
+def test_wk08_calculates_full_range_probability(random_pmf:PMF, random_pmf_txt:str):
+    '''
+    Tests if the probability calculated over the entire PMF is equal to 1.
+    '''
+
     lower = min(random_pmf.keys())
     upper = max(random_pmf.keys())
     result = wk08(random_pmf, lower, upper)
     assert math.isclose(result, 1.0), f"{random_pmf_txt}\nresult = {result:f}"  # Probability of the entire range should be 1
 
 
-def test_wk08_custom_pmf(random_pmf:PMF, random_bounds:Tuple[int, int], expected_output:float, random_pmf_txt:str):
+def test_wk08_matches_expected_output(random_pmf:PMF, random_bounds:Tuple[float, float], expected_output:float, random_pmf_txt:str):
+    '''
+    Tests if the calculated probability for a custom range matches the expected output.
+    '''
+
     lower, upper = random_bounds
     result = wk08(random_pmf, lower, upper)
     assert math.isclose(result, expected_output), (
