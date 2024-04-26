@@ -8,8 +8,8 @@ wk08 disc_prob
 ## Instructions<br>지시사항
 
 * Do not rename any of the provided files.<br>제공된 파일의 이름을 변경하지 마시오.
-* Your primary coding work will be within the `wk08.py` file. Complete the implementation of the `wk08()` function according to the assignment instructions.<br>주요 코딩 작업은 `wk08.py` 파일 내에서 이루어질 것임. 과제 지시에 따라 `wk08()` 함수를 완성하시오.
-* The `use_wk08.py` file demonstrates how to import and call your wk08() function.<br>`wk08()` 함수를 import 하여 호출하는 방법에 대해서는 `use_wk08.py` 파일을 참고하시오.
+* Your primary coding work will be within the `main.py` file. Complete the implementation of the `wk08()` function according to the assignment instructions.<br>주요 코딩 작업은 `main.py` 파일 내에서 이루어질 것임. 과제 지시에 따라 `wk08()` 함수를 완성하시오.
+* The `sample.py` file demonstrates how to import and call your wk08() function.<br>`wk08()` 함수를 import 하여 호출하는 방법에 대해서는 `sample.py` 파일을 참고하시오.
 
 ## Problem Description<br>문제 설명
 * Let's say we are trying to mass produce gears for a precision machine.<br>정밀기계 부품으로 사용할 톱니바퀴를 대량생산하려고 한다고 가정하자.
