@@ -3,7 +3,6 @@ wk08 disc_prob
 
 # Probability Analysis with Probability Mass Functions<br>확률질량함수 확률 해석
 
-* This is your assignment repository for Week 8 of Engineering Computational Analysis.<br>이것은 공학전산해석 8주차 과제 저장소이다.
 * The focus of this assignment is understanding probability mass functions (PMFs) and how to calculate probabilities within intervals.<br>이 과제는 확률질량함수(PMF)의 이해와 구간 내 확률을 계산하는 방법에 관한 것이다.
 
 ## Instructions<br>지시사항
