@@ -41,5 +41,5 @@ def test_module(py_file:pathlib.Path):
 
 
 def test_importable():
-    import wk08
-    assert wk08 is not None
+    import main
+    assert main is not None
