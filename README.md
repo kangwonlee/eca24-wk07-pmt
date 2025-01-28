@@ -39,7 +39,7 @@ pmf = {0: 0.8, 1: 0.15, 2: 0.04, 3: 0.01}
 
 Task<br>항목 | Points<br>점수 | Description<br>설명
 :---:|:---:|---
-grammar<br>문법 | 2 | The code is free of grammatical errors<br>코드에 문법적 오류가 없음
+syntax<br>문법 | 2 | The code is free of grammatical errors<br>코드에 문법적 오류가 없음
 all lines in the function<br>모든 코드가 함수 내 포함 | 2 | All lines of code are within the function<br>모든 코드가 함수 내에 위치함
 result<br>결과 | 2 | The code produces the correct result<br>코드가 올바른 결과를 내 놓음
 
