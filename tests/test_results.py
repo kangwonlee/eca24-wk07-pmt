@@ -28,7 +28,7 @@ sys.path.insert(
 )
 
 
-import main
+import exercise
 
 
 random.seed()
@@ -104,7 +104,7 @@ def test_wk08_handles_single_outcome(random_pmf:PMF, random_bounds:Tuple[float, 
     lower, upper = random_bounds
     if lower > upper:  # Ensure lower bound is not greater than upper bound
         lower, upper = upper, lower
-    result = main.wk08(random_pmf, lower, upper)
+    result = exercise.wk08(random_pmf, lower, upper)
     assert 0 <= result <= 1, f"{random_pmf_txt}\nresult = {result:f}" # Probability should be within the valid range
 
 
@@ -115,7 +115,7 @@ def test_wk08_calculates_full_range_probability(random_pmf:PMF, random_pmf_txt:s
 
     lower = min(random_pmf.keys())
     upper = max(random_pmf.keys())
-    result = main.wk08(random_pmf, lower, upper)
+    result = exercise.wk08(random_pmf, lower, upper)
     assert math.isclose(result, 1.0), f"{random_pmf_txt}\nresult = {result:f}"  # Probability of the entire range should be 1
 
 
@@ -125,7 +125,7 @@ def test_wk08_matches_expected_output(random_pmf:PMF, random_bounds:Tuple[float,
     '''
 
     lower, upper = random_bounds
-    result = main.wk08(random_pmf, lower, upper)
+    result = exercise.wk08(random_pmf, lower, upper)
     assert math.isclose(result, expected_output), (
         f"{random_pmf_txt}\n"
         f"result = {result:f}\n"
